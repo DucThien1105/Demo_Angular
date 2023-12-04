@@ -1,0 +1,23 @@
+<div>
+    <form (ngSubmit)="handleFormSubmit()" [formGroup]="studentForm">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td><input formControlName="name" type="text">
+          </td>
+  
+        </tr>
+        <tr>
+          <td>Sdt</td>
+          <td><input formControlName="phone" type="text">
+          </td>
+        </tr>
+        <tr>
+          <td>Ngày sinh</td>
+          <td><input formControlName="dob" type="text">
+          </td>
+        </tr>
+      </table>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
